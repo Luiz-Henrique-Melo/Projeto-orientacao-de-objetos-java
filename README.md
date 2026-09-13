@@ -10,12 +10,12 @@ Trabalho prático desenvolvido para a faculdade de Programação Orientada a Obj
 ## 📂 Estrutura do Código
 ```text
 src/
+├── Main.java
 └── com/
 	└── formasgeometricas/
 		├── FormaGeometrica.java
 		├── Circulo.java
 		├── Retangulo.java
 		├── Quadrado.java
-		├── Triangulo.java
-		└── Main.java
+		└── Triangulo.java
 ```

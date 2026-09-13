@@ -1,4 +1,8 @@
-package com.formasgeometricas;
+import com.formasgeometricas.Circulo;
+import com.formasgeometricas.FormaGeometrica;
+import com.formasgeometricas.Quadrado;
+import com.formasgeometricas.Retangulo;
+import com.formasgeometricas.Triangulo;
 
 public class Main {
     public static void main(String[] args) {

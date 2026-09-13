@@ -1,6 +1,6 @@
 package com.formasgeometricas;
 
-public class Retangulo implements FormaGeometrica {
+public class Retangulo extends FormaGeometrica {
     private final double largura;
     private final double altura;
 
@@ -28,5 +28,10 @@ public class Retangulo implements FormaGeometrica {
     @Override
     public double calcularPerimetro() {
         return 2 * (largura + altura);
+    }
+
+    @Override
+    public void desenhar() {
+        System.out.println("Desenhando um Retângulo [Largura: " + this.largura + ", Altura: " + this.altura + "]");
     }
 }

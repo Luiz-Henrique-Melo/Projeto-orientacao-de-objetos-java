@@ -1,6 +1,6 @@
 package com.formasgeometricas;
 
-public class Triangulo implements FormaGeometrica {
+public class Triangulo extends FormaGeometrica {
     private final double base;
     private final double altura;
     private final double ladoA;
@@ -29,5 +29,10 @@ public class Triangulo implements FormaGeometrica {
     @Override
     public double calcularPerimetro() {
         return ladoA + ladoB + ladoC;
+    }
+
+    @Override
+    public void desenhar() {
+        System.out.println("Desenhando um Triângulo [Base: " + this.base + ", Altura: " + this.altura + "]");
     }
 }

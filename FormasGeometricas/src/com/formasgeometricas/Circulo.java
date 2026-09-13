@@ -1,6 +1,6 @@
 package com.formasgeometricas;
 
-public class Circulo implements FormaGeometrica {
+public class Circulo extends FormaGeometrica {
     private final double raio;
 
     public Circulo(double raio) {
@@ -16,11 +16,16 @@ public class Circulo implements FormaGeometrica {
 
     @Override
     public double calcularArea() {
-        return Math.PI * raio * raio;
+        return Math.PI * Math.pow(raio, 2);
     }
 
     @Override
     public double calcularPerimetro() {
         return 2 * Math.PI * raio;
+    }
+
+    @Override
+    public void desenhar() {
+        System.out.println("Desenhando um Círculo com raio: " + this.raio);
     }
 }

@@ -8,4 +8,9 @@ public class Quadrado extends Retangulo {
     public double getLado() {
         return getLargura();
     }
+
+    @Override
+    public void desenhar() {
+        System.out.println("Desenhando um Quadrado através da herança do Retângulo.");
+    }
 }

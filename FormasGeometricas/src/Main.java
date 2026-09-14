@@ -13,7 +13,9 @@ public class Main {
             new Triangulo(6, 4, 5, 5, 6)
         };
 
+        System.out.println("=== Teste das formas geometricas ===");
         for (FormaGeometrica forma : formas) {
+            forma.desenhar();
             System.out.printf(
                 "%s - area: %.2f, perimetro: %.2f%n",
                 forma.getClass().getSimpleName(),
